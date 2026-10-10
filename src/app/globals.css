@@ -1,0 +1,54 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light --default;
+}
+
+@theme {
+  --color-brand: #078a40;
+  --color-brand-dark: #066f34;
+  --color-ink: #14231a;
+  --color-muted: #66756b;
+  --color-line: #e3e9e4;
+  --color-paper: #f1f5f0;
+  --color-card: #fcfdfc;
+  --color-up: #d92d20;
+  --color-down: #079455;
+  --color-flat: #667085;
+}
+
+html:root {
+  background: var(--color-paper);
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-hind), system-ui, sans-serif;
+}
+
+/* ---- Price ticker (infinite marquee) ---- */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee var(--marquee-duration, 90s) linear infinite;
+}
+
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation-duration: 400s;
+  }
+}
