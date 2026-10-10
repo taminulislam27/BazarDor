@@ -15,7 +15,7 @@ export default async function SignInPage({ searchParams }: SignInPageProps) {
   const params = await searchParams;
   const callbackUrl = safePath(params.callbackUrl);
 
-  // Already logged in? Go straight to where they were headed.
+
   if (await getSession()) redirect(callbackUrl);
 
   return (
