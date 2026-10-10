@@ -6,8 +6,8 @@
 changes since yesterday and a market-by-market breakdown (min / max / average) for every product. All prices
 are shown in Bengali digits, and the whole site works on mobile, tablet and desktop.
 
-- **Live link:** _add your deployed URL here_
-- **GitHub:** _add your repository URL here_
+- **Live link:** _[BazarDor](https://bazar-dor-eight-eta.vercel.app/)_
+- **GitHub:** _[Visit My Repo](https://github.com/taminulislam27/BazarDor)_
 
 ## ✨ Key Features
 
