@@ -13,7 +13,7 @@ export default function SocialButtons({ callbackUrl = "/" }: { callbackUrl?: str
 
   async function signInWith(provider: Provider) {
     setBusy(provider);
-    // On success the browser is redirected to the provider and back to `callbackUrl`.
+
     const { error } = await authClient.signIn.social({ provider, callbackURL: callbackUrl });
     if (error) {
       toast.error(authErrorMessage(error, "সোশ্যাল লগইন করা যায়নি। আবার চেষ্টা করুন।"));
