@@ -4,7 +4,7 @@ import SectionHeading from "@/components/SectionHeading";
 import { getProducts } from "@/lib/api";
 import { toBn } from "@/lib/format";
 import { topFallers, topRisers } from "@/lib/products";
-
+export const dynamic = "force-dynamic";
 export default async function HomePage() {
   const products = await getProducts();
   const risers = topRisers(products, 6);
