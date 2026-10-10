@@ -21,7 +21,7 @@ export default function SignInForm({ callbackUrl, redirected }: SignInFormProps)
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
-  // Shown when a protected page (e.g. product details) sent the visitor here.
+
   useEffect(() => {
     if (redirected) {
       toast.error("এই পাতাটি দেখতে আগে সাইন ইন করুন।", { id: "auth-required" });

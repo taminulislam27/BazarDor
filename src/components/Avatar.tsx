@@ -7,7 +7,7 @@ interface AvatarProps {
 export default function Avatar({ name, image, className = "size-9" }: AvatarProps) {
   if (image) {
     return (
-      // eslint-disable-next-line @next/next/no-img-element
+
       <img
         src={image}
         alt={name}
